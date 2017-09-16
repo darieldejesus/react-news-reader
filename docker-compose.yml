@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/home/react-news-reader
+      - /home/react-news-reader/node_modules
+    ports:
+      - 3000:3000
